@@ -1,7 +1,8 @@
 import React from "react";
+import { Text, Box } from "@chakra-ui/react";
 
 const Customers = () => {
-  return <div>customers</div>;
+  return <Box>customers</Box>;
 };
 
 export default Customers;

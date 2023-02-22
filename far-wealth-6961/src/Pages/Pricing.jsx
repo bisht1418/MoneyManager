@@ -1,7 +1,8 @@
 import React from "react";
+import { Text, Box } from "@chakra-ui/react";
 
 const Pricing = () => {
-  return <div>pricing</div>;
+  return <Box>pricing</Box>;
 };
 
 export default Pricing;

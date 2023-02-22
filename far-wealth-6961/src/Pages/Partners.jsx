@@ -1,7 +1,8 @@
 import React from "react";
+import { Text, Box } from "@chakra-ui/react";
 
 const Partners = () => {
-  return <div>partners</div>;
+  return <Box>partners</Box>;
 };
 
 export default Partners;
