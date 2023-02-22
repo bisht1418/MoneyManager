@@ -77,10 +77,15 @@ export default function Header() {
         >
           <Button
             as={"a"}
+            display={{ base: "none", md: "inline-flex" }}
             fontSize={"sm"}
-            fontWeight={400}
-            variant={"link"}
+            fontWeight={600}
+            color={"white"}
+            bg={"blue.400"}
             href={"/login"}
+            _hover={{
+              bg: "blue.300",
+            }}
           >
             Sign In
           </Button>
@@ -90,10 +95,10 @@ export default function Header() {
             fontSize={"sm"}
             fontWeight={600}
             color={"white"}
-            bg={"pink.400"}
+            bg={"blue.400"}
             href={"#"}
             _hover={{
-              bg: "pink.300",
+              bg: "blue.300",
             }}
           >
             Sign Up
@@ -121,7 +126,7 @@ const DesktopNav = ({ label, href, subLabel }) => {
             <PopoverTrigger>
               <Link
                 p={2}
-                href={navItem.href ?? "/product"}
+                href={navItem.href}
                 fontSize={"sm"}
                 fontWeight={500}
                 color={linkColor}
@@ -264,20 +269,25 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
   {
+    label: "Home",
+    href: "/",
+  },
+  {
     label: "Product",
+    href: "/product",
     children: [
       {
-        label: "Explore Design Work",
+        label: "Billing",
         subLabel: "Trending Design to inspire you",
         href: "/pricing",
       },
       {
-        label: "New & Noteworthy",
+        label: "Receivables",
         subLabel: "Up-and-coming Designers",
         href: "#",
       },
       {
-        label: "New & Noteworthy",
+        label: "RevRec",
         subLabel: "Up-and-coming Designers",
         href: "#",
       },
@@ -285,6 +295,7 @@ const NAV_ITEMS = [
   },
   {
     label: "Pricing",
+    href: "/pricing",
     children: [
       {
         label: "Explore Design Work",
@@ -305,6 +316,7 @@ const NAV_ITEMS = [
   },
   {
     label: "Solutions",
+    href: "/solutions",
     children: [
       {
         label: "Explore Design Work",
@@ -325,6 +337,7 @@ const NAV_ITEMS = [
   },
   {
     label: "Customers",
+    href: "/customers",
     children: [
       {
         label: "Explore Design Work",
@@ -345,6 +358,7 @@ const NAV_ITEMS = [
   },
   {
     label: "Resources",
+    href: "/resources",
     children: [
       {
         label: "Explore Design Work",
@@ -365,6 +379,7 @@ const NAV_ITEMS = [
   },
   {
     label: "Partners",
+    href: "/partners",
     children: [
       {
         label: "Explore Design Work",
