@@ -7,54 +7,67 @@ import {
   Button,
   Icon,
   IconProps,
+  HStack,
+  Box,
 } from "@chakra-ui/react";
 
 export default function Home() {
   return (
     <Container maxW={"5xl"}>
-      <Stack
+      <HStack
         textAlign={"center"}
         align={"center"}
-        spacing={{ base: 8, md: 10 }}
-        py={{ base: 20, md: 28 }}
+        spacing={{ base: 8, md: 100 }}
+        py={{ base: 10, md: 10 }}
       >
-        <Heading
-          fontWeight={600}
-          fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }}
-          lineHeight={"110%"}
-        >
-          Your recurring revenue{" "}
-          <Text as={"span"} color={"red.400"}>
-            command center
-          </Text>
-        </Heading>
-        <Text color={"gray.500"} maxW={"3xl"}>
-          Chargebee is the recurring revenue management platform for global
-          scale. Leading companies trust Chargebee to power their full recurring
-          revenue lifecycle, from subscription billing and invoicing to cash,
-          accounting, renewal, and more.
-        </Text>
-        <Stack spacing={6} direction={"row"}>
-          <Button
-            rounded={"full"}
-            px={6}
-            colorScheme={"orange"}
-            bg={"orange.400"}
-            _hover={{ bg: "orange.500" }}
+        <Box pb="10">
+          <Heading
+            fontWeight={600}
+            fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }}
+            lineHeight={"110%"}
           >
-            Get started
-          </Button>
-          <Button rounded={"full"} px={6}>
-            Learn more
-          </Button>
-        </Stack>
-        <Flex w={"full"}>
-          <Illustration
-            height={{ sm: "24rem", lg: "28rem" }}
-            mt={{ base: 12, sm: 16 }}
-          />
-        </Flex>
-      </Stack>
+            Your recurring revenue{" "}
+            <Text as={"span"} color={"blue.400"}>
+              command center
+            </Text>
+          </Heading>
+          <Text color={"gray.500"} maxW={"3xl"}>
+            Chargebee is the recurring revenue management platform for global
+            scale . Leading companies trust Chargebee to power their full
+            recurring revenue lifecycle, from subscription billing and invoicing
+            to cash, accounting, renewal, and more.
+          </Text>
+          <Stack
+            m="10"
+            align="center"
+            justify="center"
+            spacing={10}
+            direction={"row"}
+          >
+            <Button
+              rounded={"full"}
+              px={6}
+              colorScheme={"blue"}
+              bg={"blue.400"}
+              _hover={{ bg: "blue.500" }}
+            >
+              Get started
+            </Button>
+            <Button rounded={"full"} px={6}>
+              Learn more
+            </Button>
+          </Stack>
+        </Box>
+
+        <Box>
+          <Flex w={"full"}>
+            <Illustration
+              height={{ sm: "34rem", lg: "28rem" }}
+              // pt={{ base: 12, sm: 16 }}
+            />
+          </Flex>
+        </Box>
+      </HStack>
     </Container>
   );
 }
