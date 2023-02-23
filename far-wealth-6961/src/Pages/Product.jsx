@@ -1,8 +1,13 @@
 import React from "react";
-import { Text, Box } from "@chakra-ui/react";
+import { Text, Box, Image } from "@chakra-ui/react";
 
 const Product = () => {
-  return <Box>product</Box>;
+  return (
+    <Box>
+      <Image src="../Images/15.png"></Image>
+      <Image src="../Images/13.png" />
+    </Box>
+  );
 };
 
 export default Product;

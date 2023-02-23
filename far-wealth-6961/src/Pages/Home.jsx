@@ -4,6 +4,27 @@ import WithSpeechBubbles from "../Component/Testimonials";
 import TopHead from "../Component/TopHead";
 import NewsLetter from "../Component/NewsLetter";
 import Getintouch from "../Component/Getintouch";
+import SimpleThreeColumns from "../Component/SimpleThreeColumn";
+import { FcAssistant, FcDonate, FcInTransit } from "react-icons/fc";
+import { SimpleGrid, Icon, Text, Stack, Flex } from "@chakra-ui/react";
+
+const feature = [
+  {
+    icon: <Icon as={FcAssistant} w={10} h={10} />,
+    title: "Chargebee Retention",
+    text: "Reduce churn and maximize customer lifetime value with Chargebee Retention. Our solution offers flexible pricing plans for companies at every stage. Contact us to find the right pricing options for your business...",
+  },
+  {
+    icon: <Icon as={FcDonate} w={10} h={10} />,
+    title: "Chargebee Receivables",
+    text: "Recover failed payments and get paid faster with a proactive collections strategy powered by Chargebee Receivables. Connect with our team for personalized Receivables pricing options and expert advice....",
+  },
+  {
+    icon: <Icon as={FcInTransit} w={10} h={10} />,
+    title: "Chargebee RevRec",
+    text: "Unburden your finance team with automated, compliant revenue recognition and accurately track and report revenue with Chargebee RevRec. Contact us to explore personalized RevRec pricing options....",
+  },
+];
 
 const Home = () => {
   return (
@@ -36,6 +57,8 @@ const Home = () => {
           fallbackSrc="https://via.placeholder.com/150"
         />
       </Box>
+
+      <SimpleThreeColumns feature={feature} />
       <WithSpeechBubbles />
       <NewsLetter />
       {/* <Getintouch /> */}

@@ -22,7 +22,7 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-
+import ColorModeToggle from "./Colormode";
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
 
@@ -102,6 +102,9 @@ export default function Header() {
             }}
           >
             Sign Up
+          </Button>
+          <Button>
+            <ColorModeToggle />
           </Button>
         </Stack>
       </Flex>
@@ -279,17 +282,17 @@ const NAV_ITEMS = [
       {
         label: "Billing",
         subLabel: "Trending Design to inspire you",
-        href: "/pricing",
+        href: "/product",
       },
       {
         label: "Receivables",
         subLabel: "Up-and-coming Designers",
-        href: "#",
+        href: "/product",
       },
       {
         label: "RevRec",
         subLabel: "Up-and-coming Designers",
-        href: "#",
+        href: "/product",
       },
     ],
   },
@@ -298,19 +301,19 @@ const NAV_ITEMS = [
     href: "/pricing",
     children: [
       {
-        label: "Explore Design Work",
+        label: "By Role",
         subLabel: "Trending Design to inspire you",
         href: "/pricing",
       },
       {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
-        href: "#",
+        label: "Industry",
+        subLabel: "It's hard to hold your hat when",
+        href: "/pricing",
       },
       {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
-        href: "#",
+        label: "By Strategy",
+        subLabel: "reporting and staying compliant a breeze.",
+        href: "/pricing",
       },
     ],
   },
@@ -321,17 +324,17 @@ const NAV_ITEMS = [
       {
         label: "Explore Design Work",
         subLabel: "Trending Design to inspire you",
-        href: "/pricing",
+        href: "/solutions",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "#",
+        href: "/solutions",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "#",
+        href: "/solutions",
       },
     ],
   },
@@ -342,17 +345,17 @@ const NAV_ITEMS = [
       {
         label: "Explore Design Work",
         subLabel: "Trending Design to inspire you",
-        href: "/pricing",
+        href: "/customers",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "#",
+        href: "/customers",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "#",
+        href: "/customers",
       },
     ],
   },
@@ -363,17 +366,17 @@ const NAV_ITEMS = [
       {
         label: "Explore Design Work",
         subLabel: "Trending Design to inspire you",
-        href: "/pricing",
+        href: "/resources",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "#",
+        href: "/resources",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "#",
+        href: "/resources",
       },
     ],
   },
@@ -384,17 +387,17 @@ const NAV_ITEMS = [
       {
         label: "Explore Design Work",
         subLabel: "Trending Design to inspire you",
-        href: "/pricing",
+        href: "/partners",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "#",
+        href: "/partners",
       },
       {
         label: "New & Noteworthy",
         subLabel: "Up-and-coming Designers",
-        href: "#",
+        href: "/partners",
       },
     ],
   },
