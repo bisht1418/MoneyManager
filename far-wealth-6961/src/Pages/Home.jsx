@@ -7,6 +7,8 @@ import Getintouch from "../Component/Getintouch";
 import SimpleThreeColumns from "../Component/SimpleThreeColumn";
 import { FcAssistant, FcDonate, FcInTransit } from "react-icons/fc";
 import { SimpleGrid, Icon, Text, Stack, Flex } from "@chakra-ui/react";
+import Blog from "../Component/Blog";
+import { Avatar, AvatarBadge, AvatarGroup } from "@chakra-ui/react";
 
 const feature = [
   {
@@ -37,21 +39,25 @@ const Home = () => {
         />
       </Box>
 
-      <Box bg={"#F8F8FF"} p={10} mt={-100}>
+      <Box pb={"100px"}>
+        <Blog />
+      </Box>
+
+      <Box pb={"100px"} bg={"#F8F8FF"} p={10} mt={-100}>
         <Image
           src="../Images/2.png"
           fallbackSrc="https://via.placeholder.com/150"
         />
       </Box>
 
-      <Box bg={"#F8F8FF"} p={10} mt={-100}>
+      <Box pb={"100px"} p={10} mt={-100}>
         <Image
           src="../Images/3.png"
           fallbackSrc="https://via.placeholder.com/150"
         />
       </Box>
 
-      <Box bg={"#F8F8FF"} p={10} mt={-100}>
+      <Box pb={"100px"} bg={"#F8F8FF"} p={10} mt={-100}>
         <Image
           src="../Images/4.png"
           fallbackSrc="https://via.placeholder.com/150"
@@ -61,7 +67,6 @@ const Home = () => {
       <SimpleThreeColumns feature={feature} />
       <WithSpeechBubbles />
       <NewsLetter />
-      {/* <Getintouch /> */}
     </Box>
   );
 };
