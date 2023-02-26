@@ -10,6 +10,7 @@ import Customers from "../Pages/Customers";
 import Resources from "../Pages/Resources";
 import Partners from "../Pages/Partners";
 import Login from "../Pages/Login";
+import Signup from "../Pages/Signup";
 
 const AllRoutes = () => {
   return (
@@ -23,6 +24,7 @@ const AllRoutes = () => {
         <Route path="/resources" element={<Resources />} />
         <Route path="/partners" element={<Partners />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </Box>
   );
