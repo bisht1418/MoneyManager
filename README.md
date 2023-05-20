@@ -4,8 +4,6 @@ Your recurring revenue command center Money Manager is the recurring revenue man
 
 ## Pages
 
-<img width="960" alt="2023-05-20 (5)" src="https://github.com/bisht1418/Money-Manager/assets/112753461/af402690-2e7e-4e7a-ac64-f174edfa1bd4">
-
-<img width="960" alt="2023-05-20 (6)" src="https://github.com/bisht1418/Money-Manager/assets/112753461/7be94a26-7918-4af7-9f82-333cb8a96a1e">
-
-<img width="960" alt="2023-05-20 (7)" src="https://github.com/bisht1418/Money-Manager/assets/112753461/d295d5b0-2286-4ffe-8e77-7509389a6236">
+<img width="960" alt="2023-05-20 (5)" src="https://github.com/bisht1418/MoneyManager/assets/112753461/043fcc58-a2bf-489c-a213-b89493061232">
+<img width="960" alt="2023-05-20 (6)" src="https://github.com/bisht1418/MoneyManager/assets/112753461/26b73c34-f94a-44ea-adfa-ca50439cedf6">
+<img width="960" alt="2023-05-20 (7)" src="https://github.com/bisht1418/MoneyManager/assets/112753461/d03a1a33-672f-4e87-ba88-49f1a6fc46f0">
